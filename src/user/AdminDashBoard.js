@@ -10,6 +10,9 @@ const AdminDashBoard = () => {
 
   const adminLeftSide = () => {
     return (
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
       <div className="card">
         <h4 className="card-header bg-dark text-white">Admin Navigation</h4>
         <ul className="list-group">
@@ -40,11 +43,18 @@ const AdminDashBoard = () => {
           </li>
         </ul>
       </div>
+      </div>
+      </div>
+      </div>
+    
     );
   };
 
   const adminRightSide = () => {
     return (
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
       <div className="card mb-4">
         <h4 className="card-header">Admin Information</h4>
         <ul className="list-group">
@@ -60,18 +70,25 @@ const AdminDashBoard = () => {
           </li>
         </ul>
       </div>
+      </div>
+      </div>
+      </div>
     );
   };
   return (
     <Base
       title="Welcome to admin area"
       description="Manage all of your products here"
-      className="container bg-success p-4"
-    >
+      className="container bg-success p-4"    >
       <div className="row">
-        <div className="col-3">{adminLeftSide()}</div>
-        <div className="col-9">{adminRightSide()}</div>
+        
+        <div className="col-sm-12">{adminRightSide()}</div>
       </div>
+      <div className="row">
+        <div className="col-sm-12">{adminLeftSide()}</div>
+        
+      </div>
+      
     </Base>
   );
 };
