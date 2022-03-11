@@ -70,7 +70,7 @@ const Card = ({
         </p>
         <p className="btn btn-success rounded  btn-sm px-4">$ {cartPrice}</p>
         <div className="row">
-          <div className="col-sm-12">{showAddToCart(addtoCart)}</div>
+          <div className="col-sm-4">{showAddToCart(addtoCart)}</div>
           <div className="col-sm-12">{showRemoveFromCart(removeFromCart)}</div>
         </div>
       </div>
